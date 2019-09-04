@@ -1,0 +1,48 @@
+{
+  "name": "apicloud-app",
+  "version": "0.0.1",
+  "description": "a",
+  "main": "index.tsx",
+  "repository": "http://www.apicloud.com",
+  "scripts": {
+    "dev": "webpack-dev-server --open --mode development --hot",
+    "build": "webpack --color --progress --mode production",
+    "connect": "apicloud wifiStart --port 5001",
+    "sync": "apicloud wifiSync --project ./ --updateAll true --port 5001"
+  },
+  "author": "w.shen",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.16.0",
+    "cross-env": "^5.2.1",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "glob": "^7.1.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "1.4.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.4.0",
+    "@material-ui/icons": "^4.2.1",
+    "@types/node": "^12.7.4",
+    "@types/react": "^16.9.1",
+    "@types/react-dom": "16.8.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.0.4",
+    "typeface-roboto": "0.0.75",
+    "typescript": "3.5.2",
+    "@material-ui/styles": "latest"
+  }
+}
