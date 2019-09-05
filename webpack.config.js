@@ -67,7 +67,7 @@ module.exports = {
         hot: true,
         contentBase: './lib',
         compress: true,
-        port: 5000,
+        port: 5020,
         open: true,
     },
     //优化

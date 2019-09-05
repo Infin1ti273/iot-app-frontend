@@ -1,19 +1,12 @@
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
-export const mainTheme = createMuiTheme({
+export let mainTheme = (color) => createMuiTheme({
     palette: {
         primary: {
-            // light: will be calculated from palette.primary.main,
-            main: '#ff4400',
-            // dark: will be calculated from palette.primary.main,
-            // contrastText: will be calculated to contrast with palette.primary.main
+            main: color[0],
         },
         secondary: {
-            // light: will be calculated from palette.primary.main,
-            main: '#0044ff',
-            // dark: will be calculated from palette.secondary.main,
-            // contrastText: will be calculated to contrast with palette.primary.main
+            main: color[1],
         },
-        // error: will use the default color
     },
 });

@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "webpack-dev-server --open --mode development --hot",
     "build": "webpack --color --progress --mode production",
-    "connect": "apicloud wifiStart --port 5001",
-    "sync": "apicloud wifiSync --project ./ --updateAll true --port 5001"
+    "connect": "apicloud wifiStart --port 5010",
+    "sync": "apicloud wifiSync --project ./lib --updateAll true --port 5010"
   },
   "author": "w.shen",
   "license": "ISC",
